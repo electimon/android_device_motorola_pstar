@@ -1,3 +1,6 @@
+on early-init
+   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules mmi_relay touchscreen_mmi stmicro_mmi wl2866d bq2597x_mmi mmi_parallel_charger mmi_parallel_charger_qc3p sx937x_sar st21nfc
+
 on boot
 # NFC
    chown nfc nfc /dev/st21nfc
